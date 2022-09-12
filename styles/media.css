@@ -13,8 +13,8 @@
 	}
 
 	header,
-	.all-rates,
-	main {
+	main,
+	footer {
 		max-width: 100%;
 	}
 
@@ -45,7 +45,7 @@
 	}
 
 	/* cardB */
-	.all-rates {
+	main {
 		grid-area: cardB;
 		padding: 14.5rem 2.4rem 0 1.5rem;
 	}
@@ -73,7 +73,7 @@
 	}
 
 	/* cardC */
-	main {
+	footer {
 		grid-area: cardC;
 		display: flex;
 		flex-direction: row;
@@ -85,6 +85,10 @@
 
 	.person {
 		gap: 1.6rem;
+	}
+
+	.card p {
+		font-size: 1.65rem;
 	}
 
 	.card + .card {
@@ -107,5 +111,9 @@
 
 	.person {
 		gap: 2rem;
+	}
+
+	.card p {
+		font-size: 1.7rem;
 	}
 }

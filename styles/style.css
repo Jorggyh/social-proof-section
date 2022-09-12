@@ -24,8 +24,8 @@ body {
 }
 
 header,
-.all-rates,
-main {
+main,
+footer {
 	max-width: 50rem;
 	width: 100%;
 	text-align: center;
@@ -59,7 +59,7 @@ h1 + p {
 }
 
 /* cardB */
-.all-rates {
+main {
 	display: flex;
 	padding: 0 2.4rem 5rem;
 }
@@ -92,7 +92,7 @@ strong {
 }
 
 /* cardC */
-main {
+footer {
 	padding: 0 2.4rem 10rem;
 }
 
@@ -125,8 +125,8 @@ main {
 	padding-top: 0.4rem;
 }
 
-main p {
-	font-size: 1.65rem;
+footer p {
+	font-size: 1.6rem;
 	line-height: 2.2rem;
 	color: var(--white);
 	width: 100%;
