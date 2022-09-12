@@ -14,7 +14,7 @@
 
 	header,
 	.all-rates,
-	.testimony {
+	main {
 		max-width: 100%;
 	}
 
@@ -31,6 +31,7 @@
 	h1 {
 		font-size: clamp(4rem, 0.1rem + 4.7vw, 5.5rem);
 		line-height: 4.8rem;
+		letter-spacing: -0.25rem;
 		width: clamp(30rem, 0.5rem + 31vw, 38rem);
 	}
 
@@ -60,7 +61,7 @@
 
 	strong {
 		padding: 0;
-		font-size: clamp(1.45rem, 0.6rem + 1vw, 1.6rem);
+		font-size: clamp(1.45rem, 0.6rem + 1vw, 1.7rem);
 	}
 
 	.rate + .rate {
@@ -72,7 +73,7 @@
 	}
 
 	/* cardC */
-	.testimony {
+	main {
 		grid-area: cardC;
 		display: flex;
 		flex-direction: row;
@@ -82,27 +83,29 @@
 		gap: 2rem;
 	}
 
-	article {
-		width: 31.5%;
-		min-height: 23.6rem;
-		margin-bottom: 0;
+	.person {
+		gap: 1.6rem;
 	}
 
-	article + article {
+	.card + .card {
 		margin-top: 1.6rem;
 	}
 
-	article + article + article {
+	.card + .card + .card {
 		margin-top: 3.2rem;
 	}
 }
 
 @media screen and (min-width: 860px) {
 	.rate {
-		gap: 6%;
+		gap: 4%;
 	}
 
 	.material-icons {
-		padding-left: 6%;
+		padding-left: 4%;
+	}
+
+	.person {
+		gap: 2rem;
 	}
 }
