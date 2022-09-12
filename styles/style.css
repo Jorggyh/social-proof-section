@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 62.5%; /* 10px = 1rem */
+}
+
+:root {
+	--very-dark-magenta: hsl(300, 43%, 22%);
+	--soft-pink: hsla(333, 80%, 67%, 0.8);
+	--dark-grayish-magenta: hsl(303, 10%, 53%);
+	--light-grayish-magenta: hsl(300, 24%, 96%);
+	--white: hsl(0, 0%, 100%);
+}
+
+body {
+	font-family: 'League Spartan', sans-serif;
+	display: grid;
+	justify-items: center;
+	background: top left no-repeat url('../img/bg-pattern-top-mobile.svg'),
+		bottom -10rem center/contain no-repeat url('../img/bg-pattern-bottom-mobile.svg');
+}
+
+header,
+.all-rates,
+.testimony {
+	max-width: 50rem;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* cardA */
+header {
+	padding: 8.4rem 2.4rem 0;
+}
+
+h1 {
+	font-size: 3.6rem;
+	font-weight: 700;
+	line-height: 3.2rem;
+	width: 25rem;
+	color: var(--very-dark-magenta);
+}
+
+p {
+	font-size: 1.8rem;
+	line-height: 2.5rem;
+	width: 33rem;
+	color: var(--dark-grayish-magenta);
+}
+
+h1 + p {
+	padding: 2.2rem 0 3.8rem;
+}
+
+/* cardB */
+.all-rates {
+	display: flex;
+	padding: 0 2.4rem 5rem;
+}
+
+.rate {
+	background-color: var(--light-grayish-magenta);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.1rem;
+	width: 100%;
+	height: 7.8rem;
+	border-radius: 0.8rem;
+}
+
+.material-icons {
+	color: #f59542;
+	transform: scale(85%);
+}
+
+strong {
+	font-size: 1.6rem;
+	color: var(--very-dark-magenta);
+	padding-bottom: 0.5rem;
+}
+
+.rate + .rate {
+	margin-top: 1.6rem;
+}
+
+/* cardC */
+.testimony {
+	padding: 0 2.4rem 10rem;
+}
+
+article {
+	background-color: var(--very-dark-magenta);
+	border-radius: 0.8rem;
+	padding: 4.1rem 3.4rem 3.1rem;
+	text-align: left;
+}
+
+article + article {
+	margin-top: 1.5rem;
+}
+
+.person {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	padding-bottom: 2.8rem;
+}
+
+.person img {
+	width: 3.7rem;
+	height: fit-content;
+	border-radius: 50%;
+}
+
+.name-status {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.name-status p {
+	line-height: 1.9rem;
+}
+
+.name {
+	font-weight: 600;
+}
+
+.status {
+	color: var(--soft-pink);
+	padding-top: 0.1rem;
+}
+
+article p {
+	font-size: 1.6rem;
+	line-height: 2.2rem;
+	color: var(--white);
+	width: 100%;
+}

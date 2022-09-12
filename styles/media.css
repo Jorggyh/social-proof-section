@@ -1,0 +1,108 @@
+@media screen and (min-width: 768px) {
+	body {
+		min-height: 100vh;
+		display: grid;
+		grid-template-areas:
+			'cardA cardB'
+			'cardC cardC';
+		grid-template-columns: minmax(38.4rem, 57.95rem) minmax(38.4rem, 57.95rem);
+		grid-template-rows: 43.4rem auto;
+		justify-content: center;
+		background: top left no-repeat url('../img/bg-pattern-top-desktop.svg'),
+			bottom right no-repeat url('../img/bg-pattern-bottom-desktop.svg');
+	}
+
+	header,
+	.all-rates,
+	.testimony {
+		max-width: 100%;
+	}
+
+	/* cardA */
+	header {
+		grid-area: cardA;
+		text-align: left;
+		display: flex;
+		align-items: flex-start;
+		justify-self: start;
+		padding: 11.8rem 0 0 2.4rem;
+	}
+
+	h1 {
+		font-size: clamp(4rem, 0.1rem + 4.7vw, 5.5rem);
+		line-height: 4.8rem;
+		width: clamp(30rem, 0.5rem + 31vw, 38rem);
+	}
+
+	p {
+		line-height: 2.5rem;
+		width: clamp(32rem, 0.5rem + 30vw, 45rem);
+	}
+
+	h1 + p {
+		padding: 2.5rem 0 0;
+	}
+
+	/* cardB */
+	.all-rates {
+		grid-area: cardB;
+		padding: 14.5rem 2.4rem 0 1.5rem;
+	}
+
+	.rate {
+		flex-direction: row;
+		justify-content: flex-start;
+		align-self: flex-start;
+		max-width: 44.4rem;
+		height: 5.6rem;
+		gap: 0;
+	}
+
+	strong {
+		padding: 0;
+		font-size: clamp(1.45rem, 0.6rem + 1vw, 1.6rem);
+	}
+
+	.rate + .rate {
+		align-self: center;
+	}
+
+	.rate + .rate + .rate {
+		align-self: flex-end;
+	}
+
+	/* cardC */
+	.testimony {
+		grid-area: cardC;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+		max-width: 115.8rem;
+		gap: 2rem;
+	}
+
+	article {
+		width: 31.5%;
+		min-height: 23.6rem;
+		margin-bottom: 0;
+	}
+
+	article + article {
+		margin-top: 1.6rem;
+	}
+
+	article + article + article {
+		margin-top: 3.2rem;
+	}
+}
+
+@media screen and (min-width: 860px) {
+	.rate {
+		gap: 6%;
+	}
+
+	.material-icons {
+		padding-left: 6%;
+	}
+}
