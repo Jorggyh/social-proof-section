@@ -88,7 +88,7 @@
 	}
 
 	.card p {
-		font-size: 1.65rem;
+		font-size: 1.5rem;
 	}
 
 	.card + .card {
@@ -113,7 +113,11 @@
 		gap: 2rem;
 	}
 
+	footer {
+		gap: 3rem;
+	}
+
 	.card p {
-		font-size: 1.7rem;
+		font-size: 1.65rem;
 	}
 }
